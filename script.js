@@ -1,6 +1,18 @@
-function navigate(pageId) {
-  document.querySelectorAll('.page').forEach(page => {
-    page.classList.remove('active');
+function showSection(id) {
+  const sections = document.querySelectorAll('.content-section');
+  sections.forEach(section => {
+    section.classList.remove('active');
+    section.classList.add('hidden');
   });
-  document.getElementById(pageId).classList.add('active');
+
+  const target = document.getElementById(id);
+  if (target) {
+    target.classList.remove('hidden');
+    target.classList.add('active');
+  }
 }
+
+// Default load Home
+window.onload = () => {
+  showSection('home');
+};
