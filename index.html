@@ -7,58 +7,52 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Universitas Prabumulih (UNPRA)</h1>
-    <nav>
-      <button onclick="navigate('home')">Beranda</button>
-      <button onclick="navigate('artikel')">Artikel</button>
-      <button onclick="navigate('about')">Tentang Kami</button>
-      <button onclick="navigate('creator')">Pembuat</button>
-    </nav>
-  </header>
+  <nav class="navbar">
+    <div class="nav-brand">UNPRA</div>
+    <ul class="nav-links">
+      <li><button onclick="showSection('home')">Home</button></li>
+      <li><button onclick="showSection('article')">Artikel</button></li>
+      <li><button onclick="showSection('author')">Pembuat</button></li>
+      <li><button onclick="showSection('contact')">Kontak</button></li>
+    </ul>
+  </nav>
 
   <main>
-    <section id="home" class="page active">
-      <h2>Kampus Berdampak & Berprestasi</h2>
-      <p>UNPRA mencetak mahasiswa yang unggul secara akademik dan aktif dalam kegiatan non-akademik. Prestasi mahasiswa dan sistem presensi yang transparan menjadikan kampus ini sebagai pilihan tepat.</p>
+    <section id="home" class="content-section">
+      <h1>Universitas Prabumulih</h1>
+      <p>Kampus Berdampak dengan Prestasi Mahasiswa yang Mengesankan</p>
     </section>
 
-    <section id="artikel" class="page">
-      <h2>Universitas Prabumulih: Kampus Berdampak</h2>
-      <p><strong>Apa yang Membuat UNPRA Menonjol?</strong><br>
-        UNPRA menggabungkan teori dan praktik, serta mendukung pengembangan diri mahasiswa melalui lomba, seminar, dan magang.
-      </p>
-      <p><strong>Siapa yang Terlibat?</strong><br>
-        Mahasiswa sebagai aktor utama, didukung oleh dosen dan staf pengajar.
-      </p>
-      <p><strong>Kapan Kegiatan Dilaksanakan?</strong><br>
-        Sepanjang tahun, termasuk Dies Natalis ke-24 pada 1 September 2024 dan magang di awal Januari 2025.
-      </p>
-      <p><strong>Di Mana Kegiatan Dilaksanakan?</strong><br>
-        Di kampus UNPRA dan beberapa lokasi eksternal seperti Diskominfo Kota Prabumulih.
-      </p>
-      <p><strong>Mengapa Kegiatan Ini Penting?</strong><br>
-        Untuk mengembangkan soft skills dan membuka peluang kerja.
-      </p>
-      <p><strong>Bagaimana Sistem Presensi Diterapkan?</strong><br>
-        Menggunakan teknologi real-time yang efisien dan transparan.
-      </p>
+    <section id="article" class="content-section hidden">
+      <h2>Apa yang Membuat UNPRA Menonjol?</h2>
+      <p>UNPRA dikenal dengan pendekatan holistik dalam pendidikan, menggabungkan teori dan praktik untuk menghasilkan lulusan yang siap menghadapi tantangan dunia kerja. Selain itu, kampus ini aktif dalam menyelenggarakan berbagai kegiatan yang mendukung pengembangan diri mahasiswa, seperti lomba, seminar, dan program magang.</p>
+
+      <h2>Siapa yang Terlibat?</h2>
+      <p>Mahasiswa UNPRA menjadi aktor utama dalam setiap kegiatan yang diselenggarakan. Mereka tidak hanya berpartisipasi, tetapi juga sering kali meraih prestasi membanggakan. Dosen dan staf pengajar juga berperan penting dalam membimbing dan mendukung mahasiswa dalam setiap langkah mereka.</p>
+
+      <h2>Kapan Kegiatan Tersebut Dilaksanakan?</h2>
+      <p>Kegiatan di UNPRA berlangsung sepanjang tahun akademik. Misalnya, Dies Natalis UNPRA yang ke-24 pada 1 September 2024, diisi dengan berbagai lomba seperti voli, tari kreasi daerah, dan vokal solo. Program magang juga rutin dilaksanakan, seperti yang dilakukan oleh empat mahasiswa yang diterima di Dinas Komunikasi dan Informatika (Diskominfo) Kota Prabumulih pada awal Januari 2025.</p>
+
+      <h2>Di Mana Kegiatan Tersebut Dilaksanakan?</h2>
+      <p>Sebagian besar kegiatan berlangsung di kampus UNPRA yang terletak di Jalan Patra No. 50, Sukaraja, Kecamatan Prabumulih Selatan, Kota Prabumulih, Sumatera Selatan. Namun, beberapa kegiatan juga dilaksanakan di luar kampus, seperti program magang di Diskominfo Kota Prabumulih dan partisipasi dalam lomba yang diselenggarakan oleh universitas lain.</p>
+
+      <h2>Mengapa Kegiatan Ini Penting?</h2>
+      <p>Kegiatan tersebut penting untuk mengembangkan soft skills mahasiswa, seperti kepemimpinan, komunikasi, dan kerja sama tim. Selain itu, prestasi yang diraih mahasiswa dapat meningkatkan reputasi UNPRA dan membuka peluang kerja yang lebih luas bagi lulusan.</p>
+
+      <h2>Bagaimana Sistem Presensi Mahasiswa Diterapkan?</h2>
+      <p>UNPRA menerapkan sistem presensi yang efisien dan transparan, memanfaatkan teknologi untuk memantau kehadiran mahasiswa secara real-time. Hal ini tidak hanya memudahkan administrasi, tetapi juga memastikan bahwa mahasiswa hadir dan aktif dalam setiap kegiatan perkuliahan dan non-akademik.</p>
     </section>
 
-    <section id="about" class="page">
-      <h2>Tentang UNPRA</h2>
-      <p>Universitas Prabumulih (UNPRA) berlokasi di Jl. Patra No. 50, Sukaraja, Prabumulih Selatan. Kampus ini berkomitmen membentuk generasi muda yang siap menghadapi tantangan masa depan dengan integritas dan prestasi.</p>
+    <section id="author" class="content-section hidden">
+      <h2>Pembuat</h2>
+      <p>Website ini dibuat oleh [Yeni Yuliana]</p>
     </section>
 
-    <section id="creator" class="page">
-      <h2>Tentang Pembuat Website</h2>
-      <p>Website ini dibuat oleh seorang kreator muda untuk menampilkan pencapaian luar biasa Universitas Prabumulih. Dengan desain elegan dan konten informatif, diharapkan dapat memberi inspirasi bagi pembaca.</p>
+    <section id="contact" class="content-section hidden">
+      <h2>Kontak</h2>
+      <p>WhatsApp: 085369882468</p>
     </section>
   </main>
-
-  <footer>
-    <p>&copy; 2025 Universitas Prabumulih. All rights reserved.</p>
-  </footer>
 
   <script src="script.js"></script>
 </body>
