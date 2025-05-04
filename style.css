@@ -1,66 +1,67 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9f9f9;
   color: #333;
 }
 
-header {
-  background: linear-gradient(90deg, #004d7a, #008793);
-  color: white;
+.navbar {
+  background-color: #1a1a2e;
   padding: 1rem 2rem;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-nav {
-  margin-top: 1rem;
-}
-
-nav button {
-  background-color: white;
-  color: #004d7a;
-  border: none;
-  margin: 0 0.5rem;
-  padding: 0.6rem 1.2rem;
+.nav-brand {
+  color: #fff;
+  font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
 }
 
-nav button:hover {
-  background-color: #d1ecf1;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links button {
+  background-color: #16213e;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.nav-links button:hover {
+  background-color: #0f3460;
 }
 
 main {
   padding: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
-.page {
+.content-section {
   display: none;
-  animation: fadeIn 0.5s ease-in-out;
 }
 
-.page.active {
+.content-section.active {
   display: block;
 }
 
-footer {
-  background-color: #004d7a;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+.hidden {
+  display: none;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+h1, h2 {
+  color: #112d4e;
+}
+
+p {
+  line-height: 1.6;
 }
